@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <Gallery
+            android:id="@+id/galleryFilter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spacing="4px" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/runtime"
+        android:text="图片滤镜效果处理中......"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="14dip"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/runtime"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+    <ImageView android:id="@+id/imgfilter"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:focusable="false"/>
+    </RelativeLayout>
+
+       <RelativeLayout android:id="@+id/rlayout"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent">
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent">
+       <Button android:id="@+id/button1"
+           android:layout_alignParentBottom="@+id/rlayout"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:text="请选择图片"
+        />
+       <Button android:id="@+id/button2"
+           android:layout_alignParentBottom="@+id/rlayout"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_alignLeft="@+id/button1"
+           android:layout_marginLeft="160dp"
+           android:text="返回主界面"/>
+           </LinearLayout>
+       </RelativeLayout>
+</LinearLayout>

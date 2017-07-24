@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layContain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/backphotos">
+
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout android:id="@+id/laystart"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout android:id="@+id/layFirst"
+            android:layout_width="400px"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="50dp"
+           >
+          <RelativeLayout android:id="@+id/layFirst1"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginTop="50dp"
+              android:layout_marginLeft="75dp">
+              <Button android:id="@+id/button1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:textColor="#0000FF"
+                  android:text="美化图片"/>
+               </RelativeLayout>
+              <RelativeLayout android:id="@+id/layFirst2"
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:layout_marginLeft="75dp"
+                  android:layout_marginTop="50dp"
+                  android:layout_below="@+id/laystart"
+                   >
+                  <Button
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:text="设置"
+                      android:textColor="#0000FF"
+                      />
+                  </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="50dp"
+                >
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="其他"
+                    android:textColor="#0000FF"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/laySecond"
+            android:layout_width="400px"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            ></LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="40dp"
+            >
+            <TextView android:id="@+id/roll_dot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textSize="50dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView android:id="@+id/roll_dot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textSize="50dp"
+                android:textColor="#000000"/>
+
+            </LinearLayout>
+
+    </FrameLayout>
+    
+</LinearLayout>
